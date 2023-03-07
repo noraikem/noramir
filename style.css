@@ -1,5 +1,69 @@
-body {
-    margin:0;
+:root {
+    --list-padding: 10px;
+    --color-principal: #DCB91B;
+    --color-background: #202020;
+    --color-nav: #121212;
+    --color-drop: #505050;
+    --color-text:white;
+}
+
+* {
     padding:0;
-    box-sizing:border-box;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-background);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+main{
+    overflow: auto;
+    position: relative;
+    top:60px;
+    width: 100%;
+    height: 100%;;
+    scroll-behavior: smooth;
+}
+.test{
+    width: 500px;
+    height: 600px;
+    background-color: red;
+}
+main :nth-child(2n){
+    background-color: blue;
+}
+main :nth-child(5){
+    background-color: green;
+}
+#blog:hover ul {
+    display: block;
+    z-index: 2;
+}
+
+main::-webkit-scrollbar {
+    background-color: var(--color-drop);
+    width: 0.5rem;
+}
+main::-webkit-scrollbar-thumb {
+    background-color: var(--color-principal);
 }
