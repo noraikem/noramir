@@ -14,8 +14,6 @@ const pageScroll = () => {
     scrolldelay = setTimeout(pageScroll,1);    
 }
 
-
-
 openBtn.addEventListener("click",openNav)
 closeBtn.addEventListener("click", closeNav)
 main.addEventListener("click", pageScroll)

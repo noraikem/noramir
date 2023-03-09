@@ -13,10 +13,11 @@ nav{
     padding: 10px 40px 0px;
     display: flex;
     position: sticky;
-    /*min-height: 7.5vh;*/
+    min-height: 8vh;
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 3;
 }
 #logo{
     aspect-ratio: 3 / 2;
@@ -27,10 +28,25 @@ nav{
     position: absolute;
     right: 0;
     top:0;
-    height: 100%;
+    height: 60px;
     width: 60px;
-    background-color: red;
     display: none;
+}
+ion-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    top:10%;
+    left: 5%;
+}
+.close{
+    color: white;
+}
+
+ion-icon:hover{
+    color: var(--color-principal);
 }
 nav>ul {
     display: flex;
@@ -68,21 +84,24 @@ nav ul li ul{
     top: 0;
     right: -200%;
     background-color: var(--color-nav) ;
-    z-index: 3;
-    height: 100vh;
+    z-index: 4;
+    height: 100%;
     width: 100vw;
     transition: 0.7s ease;
 }
 
-
 .nav-links {
-    padding: 1rem 6rem 1rem 3rem;
+    padding: 1rem 6rem 1rem 6rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
 }
 .nav-link {
     cursor: pointer;
-    font-size: 25px;
+    font-size: 50px;
     margin-bottom: 50px;
-    display: flex;
     align-items: center;
     color: var(--color-text);
 }
@@ -99,3 +118,5 @@ nav ul li ul{
         display: block;
     }
   }
+
+  
