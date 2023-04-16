@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center" id="center">
+        <h1>Sign in</h1>
+        <form method=post action="contact.php">
+            <div class="text">
+                <input type="text" id="firstname" name="user_firstname" required>
+                <span></span>
+                <label for="firstname">Prénom</label>
+            </div>
+            <div class="text">
+                <input type="text" id="name" name="user_name" required>
+                <span></span>
+                <label for="name">Nom</label>
+            </div>
+          <div class="text">
+
+                <input type="text" id="nickname" name="user_nickname" required>
+                <span></span>
+                <label for="nickname">Pseudo</label>
+            </div>
+            <div class="text">
+                <input type="email" name="mail" id="user_mail" required>
+                <span></span>
+                <label for="mail">Email</label>
+            </div>
+            <div class="text">
+                <input type="password" name="password" id="user_password" required>
+                <span></span>
+                <label for="password">Mot de passe </label>
+            </div>
+            <div>
+                <input type="checkbox" name="toc" id="toc" required>
+                <label for="toc">Oue j'ai tout lu tkt </label>
+            </div>
+            <button type="submit"> J'adhère, je valide</button>
+        </form>
+    </div>
+</body>
+</html>
